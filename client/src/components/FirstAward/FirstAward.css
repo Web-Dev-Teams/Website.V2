@@ -1,0 +1,10 @@
+.FirstAward{
+    height: 467px ;
+    width: 1440px;
+    display: flex;
+
+}
+.award-image{
+    width: 632px ;
+    height: 466px;
+}

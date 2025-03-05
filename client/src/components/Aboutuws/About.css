@@ -1,0 +1,24 @@
+.about-UWS{
+    width: 1359px;
+    height: 442px;
+    font-size: 27px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    color: #292929;
+    margin:40px;
+    
+    
+
+}
+.about-UWS div{
+    padding: 40px;
+    gap: 5px;
+    text-align: center;
+}
+#read-more a{
+    color: #008080D1;
+    text-decoration: none;
+}
