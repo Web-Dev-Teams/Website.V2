@@ -1,0 +1,49 @@
+.Layout7{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F5F5F5;
+    padding: 50px 40px;
+}
+.Layout7-about{
+    display: flex;
+    flex-direction: column;
+    background: #F1F1F1;
+    border-radius: 15px;
+    width: 579px;
+    height: 621px;
+    padding: 30px;
+}
+.Layout7-about h1{
+    margin-left:10px ;
+}
+.content-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.content-img{
+    display: flex;
+
+}
+.content-wrapper p{
+    font-size: 27px;
+    font-weight: 400;
+    font-family: "Open Sans",sans-serif;
+    line-height: 1.5;
+
+}
+.Layout7-about button{
+    width: 291px;
+    height: 56px;
+    padding: 10px 40px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family:"oswald",sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 10px auto;
+    border-radius: 18px;
+}

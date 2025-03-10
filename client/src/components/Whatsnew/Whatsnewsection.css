@@ -1,0 +1,27 @@
+.Whatsnew-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.heading-whatsnew{
+    width: 1372px;
+    cursor: pointer;
+    height: 62px;
+    border-bottom: #E8A13E 5px solid;
+    display: flex;
+}
+.heading-whatsnew h1{
+    width: 300px;
+    height: 61px;
+    background-color: #E8A13E;
+    font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+.heading-whatsnew img{
+    width: 57px;
+    height: 61px;
+    background-color: #E3972C;
+}

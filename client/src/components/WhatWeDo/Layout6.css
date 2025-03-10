@@ -1,0 +1,43 @@
+.Layout6-container{
+    background-color: #EAFFFF;
+    width: 1440px;
+    height: 643px;
+    margin: 40px 0;
+    padding: 20px 20px 0 20px;
+}
+.Layout6-container h1{
+    margin: 0 20px;
+    font-size: 66px;
+    font-weight: 400;
+    font-family: "oswald",sans-serif;
+}
+.Layout6 img{
+    width: 499px;
+    height: 416px;
+}
+.Layout6{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.Layout6 h1{
+    font-size: 144px;
+    font-family: "oswald",sans-serif;
+    font-weight: 400;
+}
+.Layout6 p{
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Open Sans",sans-serif;
+    color: #000000;
+}
+.Layout6 div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 319px;
+    height: 248px;
+
+}

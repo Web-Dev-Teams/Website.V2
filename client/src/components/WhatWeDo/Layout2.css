@@ -1,0 +1,43 @@
+.Layout2{
+    width: 1358px;
+    height: 523px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    margin-bottom: 5px;
+    
+}
+.Layout2-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Layout2-left p{
+    width: 896px;
+    height: 525px;
+    font-size: 27px;
+    padding: 30px 0;
+
+}
+.Layout2 ul{
+    list-style: none;
+    border: 1px solid #000000;
+
+}
+.Layout2 ul li{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 397px;
+    height: 90px;
+    font-size: 36px;
+    font-weight: 300;
+    font-family: "Inter",Verdana, Geneva, Tahoma, sans-serif;
+}
+.Layout2 ul li span{
+    position: absolute;
+    left: 0px;
+}

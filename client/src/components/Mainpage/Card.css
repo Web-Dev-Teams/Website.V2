@@ -1,0 +1,84 @@
+.card{
+    width: 574px;
+    height: 824px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: center;
+    align-items:center;
+    padding: 20px 10px;
+    background-color: #072622;
+    margin: 90px 30px 0 30px;
+
+}
+.card-image img{
+    width: 510px;
+    height: 487px;
+    border-radius: 15px;
+}
+.card-image{
+ 
+    position: relative;
+}
+
+.card-image h1{
+    position: absolute;
+    left: 30px;
+    bottom: 40px;
+    color: #FFFFFF;
+    background-color:#FBD784;
+    width: 255px;
+    height: 60px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 43px;
+    font-weight: 500;
+    font-family: "Kantumruy Pro",sans-serif;
+    text-align: center;
+    z-index: 100;
+}
+.card li h4{
+    text-align: right;
+    color: #FBD784;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    /* border: 1px solid red; */
+    margin-left: 60%;
+    width: 187px;
+    height: 67px;
+    
+}
+.card p{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card button{
+    outline: none;
+    border: none;
+    width: 343px;
+    height: 52px;
+    background-color:#FDCA55;
+    color: #000000;
+    font-size: 28px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.mainpage-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1420px;
+    background-color: #052522ED;
+    margin: auto;
+    padding: 50px;
+}

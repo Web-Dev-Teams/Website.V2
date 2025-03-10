@@ -88,6 +88,7 @@
     font-weight: 400;
     /* margin-top: 10px; */
     margin-left: 13vw;
+    cursor: pointer;
 }
 .UWS button{
     border: none;
@@ -100,4 +101,19 @@
     font-weight: 400;
     margin-top: 26px;
     color: white;
+}
+
+.active-class{
+    border: #008080 1px solid;
+    border-radius: 30px;
+    padding: 5px 14px;
+    font-size: 20px;
+    background-color: #008080;
+    text-decoration: none;
+    color:#fffefe;
+}
+
+.not-active-class{
+    text-decoration: none;
+    color: black;
 }

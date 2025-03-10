@@ -1,0 +1,22 @@
+.Layout1{
+    width: 1440px;
+    height: 756px;
+    position: relative;
+    margin: 20px 0;
+}
+.Layout1 h1{
+    color: #F5F5F5;
+    width: 332px;
+    height: 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 87px;
+    top: 610px;
+    font-size: 61px;
+    font-weight: 400;
+    font-family: "Inter",Verdana, Geneva, Tahoma, sans-serif;
+    
+
+}

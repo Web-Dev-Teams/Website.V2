@@ -1,0 +1,27 @@
+.Layout3{
+    width: 1312px;
+    height: 62px;
+    display: flex;
+    justify-content: start;
+    margin-left: 35px;
+    margin-top:20px ;
+}
+.Layout3 h1{
+    width: 364px;
+    height: 62px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 400;
+    padding-left:5px;
+
+}
+.Layout3 span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 57px;
+    height: 62px;
+}

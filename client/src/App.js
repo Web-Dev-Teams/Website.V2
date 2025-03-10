@@ -1,20 +1,53 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import Photos from './components/Photos/Photos';
-import Aboutuws from './components/Aboutuws/Aboutuws'
-import FirstAward from './components/FirstAward/FirstAward';
+import Homepage from './pages/Homepage';
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import DigiXplore from './pages/WhatWeDo/DigiXplore';
+import Mainpage from './pages/WhatWeDo/Mainpage';
+import Netritva from './pages/WhatWeDo/Netritva';
+import Prayaas from './pages/WhatWeDo/Prayaas';
+import Akshar from './pages/WhatWeDo/Akshar';
+import ESafe from './pages/WhatWeDo/ESafe';
 
 function App() {
+  const router = createBrowserRouter(
+    [
+      {
+        path:'/',
+        element: <Homepage/>
+      },
+      {
+        path:'/whatwedo',
+        element: <Mainpage/>,
+      },
+      {
+        path:'/digiXplore',
+         element: <DigiXplore/>
+      },
+          {
+         path:'/netritva',
+         element:<Netritva/>
+      },
+      {
+         path:'/prayaas',
+        element:<Prayaas/>
+      },
+      {
+        path:'/eSafe',
+        element:<ESafe/>
+      },
+      {
+        path:'/akshar',
+         element:<Akshar/>
+      }
+        
+    ]
+  );
+
+
+
   return (
     <div>
-
-      <Header/>
-      <Photos/>
-      <Aboutuws/>
-      <FirstAward/>
-      <Footer/>
+          <RouterProvider router ={router}/>
     </div>
 
   );

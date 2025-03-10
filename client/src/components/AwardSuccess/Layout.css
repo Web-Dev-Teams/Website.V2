@@ -1,0 +1,45 @@
+.Award-container{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 1440px;
+    height: 466px;
+    
+}
+.award-left{
+    width: 808px;
+    height: 466px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.award-left h1{
+    margin-top: 45px;
+    height: 128px;
+    font-size: 43px;
+    font-family: "oswald",sans-serif;
+    width: 506px;
+    font-weight: 600;
+}
+.award-left p{
+    font-size: 16px;
+    font-family: "Inter",Verdana, Geneva, Tahoma, sans-serif;
+    width: 506px;
+    height: 133px;
+    font-weight: 400;
+}
+.award-right img{
+    width: 632px;
+    height: 466px;
+}
+#view{
+    color:#581B84;
+}
+#view a{
+    text-decoration: none;
+
+}

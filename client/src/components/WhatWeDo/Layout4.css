@@ -1,0 +1,23 @@
+.Layout4{
+    width: 1312px;
+    height: 1355px;
+    margin: 20px auto;
+    
+}
+.Layout4 h2{
+    font-family: "oswald",sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    margin: 20px 0;
+
+}
+.Layout4 p{
+    width: 1312px;
+    height: 629px;
+    font-size: 27px;
+    font-weight: 400;
+    font-family: "Open Sans",sans-serif;
+    margin-top: 20px ;
+    padding-top: 30px;
+    text-align: center;
+}
