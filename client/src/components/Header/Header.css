@@ -117,3 +117,25 @@
     text-decoration: none;
     color: black;
 }
+.contact-dropdown {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    top: 50px; /* Adjust based on your layout */
+  }
+  
+  .contact-dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-dropdown li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-dropdown li:last-child {
+    margin-bottom: 0;
+  }
+  

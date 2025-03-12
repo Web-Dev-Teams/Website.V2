@@ -1,0 +1,49 @@
+.classmenu {
+    height: 125px; 
+    width: 200px;
+    border: 1px solid black;
+    position: absolute;
+    top: 100%; 
+    right: 0%;  
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+    margin-top: 10px;
+}
+
+.classmenu ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.classmenu ul li {
+    border: 1px solid black;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 12px 12px;
+    width: 200px;
+}
+
+.menu-actice-class {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 28px;
+    font-family: "Oswald", sans-serif;
+    background-color: #008080;
+}
+
+.menu-not-actice-class {
+    text-decoration: none;
+    color: black;
+    font-size: 28px;
+    font-family: "Oswald", sans-serif;
+    background-color: transparent;
+}
+
+.classmenu ul li:hover {
+    background-color: #E48D31; 
+}

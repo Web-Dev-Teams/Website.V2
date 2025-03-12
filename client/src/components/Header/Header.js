@@ -5,7 +5,7 @@ import Homepage from '../../pages/Homepage';
 import { NavLink } from 'react-router-dom';
 import Menu from '../WhatWeDo/Menu';
 // import DigiXplore from 'src\pages\WhatWeDo\DigiXplore';
-
+import ContactMenu from '../Contactus/ContactMenu';
 
 const Header = () => {
 
@@ -14,8 +14,10 @@ const Header = () => {
     const toggleMenu = () => {
       setIsOpen(!isOpen);
     }
-
-
+    const [isContactOpen, setIsContactOpen] = useState(false);  // For "Contact Us" dropdown state
+    const toggleContactMenu = () => {
+      setIsContactOpen(!isContactOpen);   // Toggle "Contact Us" dropdown
+  }
   
 
 
@@ -58,8 +60,10 @@ const Header = () => {
                <NavLink to='/volunteer' className={({isActive}) => isActive ? "active-class" : "not-active-class "}>Volunteer</NavLink>
             </li>
             <li>
-               <NavLink to='/contactus' className={({isActive}) => isActive ? "active-class" : "not-active-class  "}>Contact us</NavLink>  <span><img src="../Polygon-1.svg"/></span> 
-            </li>
+                <NavLink to='/contactus' className={({ isActive }) => isActive ? "active-class" : "not-active-class "}>Contact Us</NavLink>
+                <span onClick={toggleContactMenu}><img src="../Polygon-1.svg" /></span>
+                {isContactOpen && <ContactMenu />} {/* This is the dropdown for "Contact Us" */}
+              </li>
               
          </ul>
         </div>
