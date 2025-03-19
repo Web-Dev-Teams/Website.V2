@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com'; // Import EmailJS
 
+
+// first make sure to run "npm install emailjs-com"
+//:-Satvik Singh
 const Helpdesk = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -18,16 +22,40 @@ const Helpdesk = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic (e.g., sending data to an API)
-    alert('Thank you for your feedback!');
-    setFormData({
-      name: '',
-      email: '',
-      mobile: '',
-      message: ''
-    });
-  };
 
+    // Prepare form data to be sent in the email
+    const emailData = {
+      name: formData.name,
+      email: formData.email,
+      mobile: formData.mobile,
+      message: formData.message,
+    };
+
+    // Send the email using EmailJS
+    emailjs
+      .send(
+        'service_9o6v8od',  // Replace with your service ID
+        'template_ddl1qb8',  // Replace with your template ID
+        emailData,           // Data to send (form values)
+        'nuFqggl8nmWzxVECy' // Your public API key
+      )
+      .then(
+        (response) => {
+          console.log('Success:', response);
+          alert('Thank you for your feedback!');
+          setFormData({
+            name: '',
+            email: '',
+            mobile: '',
+            message: '',
+          });
+        },
+        (error) => {
+          console.log('Error:', error);
+          alert('Failed to send the message. Please try again later.');
+        }
+      );
+  };
   return (
     <div style={styles.helpdeskContainer}>
       <h2 style={styles.heading}>Helpdesk</h2>

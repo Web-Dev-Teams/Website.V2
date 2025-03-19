@@ -32,7 +32,7 @@ const Header = () => {
       <div className='UWS'>
         <div className='UWS-Heading'>
           <div className='UWS-Header'>
-          <h1>Unnati Welfare Society</h1>
+          <h1>UNNATI WELFARE SOCIETY</h1>
           <p>Revolutionizing present, Transforming Future</p>
           </div>
          <button>Donate</button>
