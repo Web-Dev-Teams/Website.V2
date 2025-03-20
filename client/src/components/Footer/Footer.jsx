@@ -37,11 +37,11 @@ const Footer = () => {
         <div className='about-box'>
         <ul>
             <h4>Follow Us</h4>
-            <li><a href="#">Facebook Page</a></li>
-            <li><a href="#">X Profile</a></li>
-            <li><a href="#">instagram Page</a></li>
-            <li><a href="#">LinkedIn Page</a></li>
-            <li><a href="#">Youtube Channel</a></li>
+            <li><a href="https://www.facebook.com/share/1D1Z8SNbRN/ ">Facebook Page</a></li>
+            <li><a href="https://x.com/Unnati_Welfare">X Profile</a></li>
+            <li><a href="https://www.instagram.com/unnati_welfare_society?igsh=bTlmZG9zMXVvbzJs ">instagram Page</a></li>
+            <li><a href="https://www.linkedin.com/company/unnati-welfare-society/ ">LinkedIn Page</a></li>
+            <li><a href="https://www.youtube.com/@unnatiwelfaresociety">Youtube Channel</a></li>
           </ul>
         </div>
         <div className='about-box'>

@@ -7,9 +7,9 @@ import Netritva from './pages/WhatWeDo/Netritva';
 import Prayaas from './pages/WhatWeDo/Prayaas';
 import Akshar from './pages/WhatWeDo/Akshar';
 import ESafe from './pages/WhatWeDo/ESafe';
-import Donaton from './pages/Donation';
 import Donation from './pages/Donation';
-
+import Contactus from './pages/ContactUs/Contactus';
+import FaqPage from './pages/ContactUs/FaqPage';
 function App() {
   const router = createBrowserRouter(
     [
@@ -44,8 +44,15 @@ function App() {
       {
         path:'/donation',
         element:<Donation/>
-      }
-        
+      },
+      {  
+        path: '/faq',
+        element: <FaqPage/>
+      },
+      {
+        path: '/contactus',
+        element: <Contactus/>
+      }   
     ]
   );
 
