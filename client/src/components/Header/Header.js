@@ -33,7 +33,7 @@ const Header = () => {
           <h1>Unnati Welfare Society</h1>
           <p>Revolutionizing present, Transforming Future</p>
           </div>
-         <button>Donate</button>
+         <NavLink to='/donation'><button>Donate</button></NavLink>
         </div>
         <div className='UWS-about'>
          <ul>

@@ -13,6 +13,7 @@
 }
 .card-image img{
     width: 510px;
+    
     height: 487px;
     border-radius: 15px;
 }
@@ -36,6 +37,9 @@
     font-family: "Kantumruy Pro",sans-serif;
     text-align: center;
     z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .card li h4{
     text-align: right;

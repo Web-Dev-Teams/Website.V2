@@ -7,6 +7,8 @@ import Netritva from './pages/WhatWeDo/Netritva';
 import Prayaas from './pages/WhatWeDo/Prayaas';
 import Akshar from './pages/WhatWeDo/Akshar';
 import ESafe from './pages/WhatWeDo/ESafe';
+import Donaton from './pages/Donation';
+import Donation from './pages/Donation';
 
 function App() {
   const router = createBrowserRouter(
@@ -38,6 +40,10 @@ function App() {
       {
         path:'/akshar',
          element:<Akshar/>
+      },
+      {
+        path:'/donation',
+        element:<Donation/>
       }
         
     ]
