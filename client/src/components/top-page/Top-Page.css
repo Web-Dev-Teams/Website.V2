@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Varela+Round&display=swap');
+
+.top-cont {
+   
+    
+    width: 100%;
+}
+
+
+.img-top img {
+    margin-top: 30px;
+    width: 100%;  
+    height: 479px; 
+    object-fit: cover; 
+}
+
+.text {
+   
+    margin-top: 50px;
+    padding: 0 20px;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #333;
+}
+
+.text p{
+    font-family: "Roboto Flex", sans-serif;
+    text-align: center;
+    margin-left: 60px;
+    margin-right: 40px;
+}
+
+
+.text button {
+    margin-top: 15px;
+    width: 503px;
+    height: 63px;
+    padding: 10px 20px;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: #039D9D; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 100px;
+    
+}
+
+
+.text button:hover {
+    background-color: gray;
+}
+
+

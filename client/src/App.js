@@ -10,6 +10,9 @@ import ESafe from './pages/WhatWeDo/ESafe';
 import Donation from './pages/Donation';
 import Contactus from './pages/ContactUs/Contactus';
 import FaqPage from './pages/ContactUs/FaqPage';
+import Volunteers from './pages/Volunteers/Volunteers';
+
+
 function App() {
   const router = createBrowserRouter(
     [
@@ -25,7 +28,7 @@ function App() {
         path:'/digiXplore',
          element: <DigiXplore/>
       },
-          {
+      {
          path:'/netritva',
          element:<Netritva/>
       },
@@ -44,6 +47,10 @@ function App() {
       {
         path:'/donation',
         element:<Donation/>
+      },
+      {
+        path:'/volunteer',
+        element:<Volunteers/>
       },
       {  
         path: '/faq',

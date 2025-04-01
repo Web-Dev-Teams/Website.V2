@@ -101,6 +101,7 @@
     font-weight: 400;
     margin-top: 26px;
     color: white;
+    cursor: pointer;
 }
 
 .active-class{
@@ -116,10 +117,6 @@
 .not-active-class{
     text-decoration: none;
     color: black;
-}
-.dummy_para{
-    width: 1440px;
-    padding: 20px;
 }
 .contact-dropdown {
     position: absolute;
@@ -142,4 +139,7 @@
   .contact-dropdown li:last-child {
     margin-bottom: 0;
   }
-  
+  .dummy_para{
+    width: 1440px;
+    padding: 20px;
+}

@@ -13,7 +13,7 @@
 }
 .card-image img{
     width: 510px;
-    
+
     height: 487px;
     border-radius: 15px;
 }
@@ -83,6 +83,6 @@
     align-items: center;
     max-width: 1420px;
     background-color: #052522ED;
-    margin: auto;
+    margin: 15px auto;
     padding: 50px;
 }

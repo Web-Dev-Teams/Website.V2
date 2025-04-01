@@ -4,7 +4,6 @@ import DigiXplore from '../../pages/WhatWeDo/DigiXplore';
 import Homepage from '../../pages/Homepage';
 import { NavLink } from 'react-router-dom';
 import Menu from '../WhatWeDo/Menu';
-// import DigiXplore from 'src\pages\WhatWeDo\DigiXplore';
 import ContactMenu from '../Contactus/ContactMenu';
 
 const Header = () => {

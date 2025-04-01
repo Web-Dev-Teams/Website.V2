@@ -5,6 +5,7 @@ import Layout3 from '../../components/WhatWeDo/Layout3'
 import Layout from '../../components/AwardSuccess/Layout'
 import Whatsnew from '../../components/Whatsnew/Whatsnew'
 import Card from '../../components/Mainpage/Card'
+import Footer from '../../components/Footer/Footer'
 
 
 const Mainpage = () => {
@@ -31,6 +32,7 @@ const Mainpage = () => {
         <Card image="./prakritiPath.png" heading="Prakriti Path"  date="12 JAN 2025" content="At Unnati Welfare Society, we believe in empowering every student with knowledge. After our live classes, we offer dedicated Doubt Sessions to ensure no question goes unanswered...."
         title="Prakriti path"/>
         </div>
+        <Footer/>
 
 
     </div>

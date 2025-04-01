@@ -1,0 +1,39 @@
+.text{
+    text-align: center;
+    font-weight: 700;
+    font-size: 89px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.card {
+    width: 300px;  
+    position: relative; 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-title {
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    font-weight: 700;
+    color: white; 
+    padding: 5px 10px;
+    font-size: 32px;
+ 
+}
