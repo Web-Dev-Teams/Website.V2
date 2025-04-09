@@ -13,7 +13,7 @@ export default function Community() {
    
     return (
         <>
-            <h1>Community</h1>
+            <h1 className="community">Community</h1>
             <div className="community-container">
                 <Card imgSrc="https://s3-alpha-sig.figma.com/img/854e/df3f/6451cbebd8d28e246d64f21e90bc09a4?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=oLzIwwZfNxCKLSwSZZpXXL8o0CqvnJCwZSoerTwQDdYp6yD9KDzjnCuBdZ-14dh1UfC72Vw3En6uFVIVrViCM-t9C4HjkHY~6kSq-Ld-OZOwBLUvXAyfj9MusBA8tYil0opsBijQ9rUDGqYDjqcSctIYZLNxXHBab2LLPZEeT5G7PBg~PKTscIZB6r-LOu-C-kdny7QDtglZFNltPazqiiimn4O7EMs1hWSlZr0nc4A16ETq8Pso3FO0wB~Mz2Cw1yx~XkUZ1KqCgbOJxDgPW1x6XXZeGREAQ0lCDvr3WdwgGjUiLtXMUBmmemkB8XBtao-K-X42LXEKwlKkPA1PzQ__" title="PR Team" description="This platform is organized for ui/ux designers, for those who are interesting in learning ui/ux designers and also for new and old designers." />
                 <Card imgSrc="https://s3-alpha-sig.figma.com/img/f3d7/0ae9/9ac42fa8a692393b17067e61481ba0db?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=qe5GcU5RqRphhjVcxdfBOo~eKOwWCiyJl~i5dnW-8kCagP-c6gwW6Y6PGQtB7zWuYZUjXzPwDm2KLlwMa-CEtufPSnEH3EpdB3ZlsHt9sstNSS1yhL1HRApYaKMxUEuXOOHvx1FVmFoougrtBkqbpcwCHkOqZIKhDiNU~j850uR-ktXg1xyYOPikE7Tii1B~~NAVVygf5HRY7nBQTUTs-wzrpHuvBIZICHkJjcDilav7MvGDSb-iDWEF~xydPi0wnQHJLTPT2PlZpjvhVx2I0q7eUFacwhuNZSHRpXXUAJu4s7L4RHIe4x-mZvXyJPceW2ReMRToDCAihNV6P4yqlw__" title="R&D Team" description="This platform is organized for ui/ux designers, for those who are interesting in learning ui/ux designers and also for new and old designers."  />

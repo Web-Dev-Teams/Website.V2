@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css';
+import { NavLink } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -27,11 +28,11 @@ const Footer = () => {
         <div className='about-box'>
           <ul>
             <h4>Quick Links</h4>
-            <li><a href="#">About Us</a></li>
+            <li><NavLink to="/aboutus">About us</NavLink></li>
             <li><a href="#">Our Programs</a></li>
             <li><a href="#">Get Involved</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Donate Now</a></li>
+            <li><NavLink to="/contactus">Contact us</NavLink></li>
+            <li><NavLink to="/donation">Donate us</NavLink></li>
           </ul>
         </div> 
         <div className='about-box'>
@@ -49,9 +50,9 @@ const Footer = () => {
             <h4>Resources</h4>
             <li><a href="#">Blog Posts</a></li>
             <li><a href="#">Success Stories</a></li>
-            <li><a href="#">Volunteer Info</a></li>
+            <li><NavLink to="/volunteer">Volunteer us</NavLink></li>
             <li><a href="#">Event Calendar</a></li>
-            <li><a href="#">FAQs</a></li>
+            <li><NavLink to="/faq">FAQs</NavLink></li>
           </ul>
         </div>
         <div className='about-box'>
@@ -67,11 +68,11 @@ const Footer = () => {
         <div className='about-box'>
         <ul>
             <h4>Contact Info</h4>
-            <li><a href="#">Email Us</a></li>
-            <li><a href="#">Call Us</a></li>
-            <li><a href="#">Visit US</a></li>
-            <li><a href="#">Our Address</a></li>
-            <li><a href="#">Feedback Form</a></li>
+            <li><NavLink to="/contactus">Email us</NavLink></li>
+            <li><NavLink to="/contactus">Call us</NavLink></li>
+            <li><NavLink to="/contactus">Visit us</NavLink></li>
+            <li><NavLink to="/contactus">Our Address</NavLink></li>
+            <li><NavLink to="/contactus">Feedback Form</NavLink></li>
           </ul>
         </div>
         
