@@ -1,10 +1,10 @@
-.recent_activity{
+/* .recent_activity{
     width: 1440px;
     margin: 0 auto;
 
 }
 .text{
-    /* text-align: center; */
+    
     font-weight: 700;
     font-size: 89px;
 }
@@ -20,10 +20,7 @@
     width: 380px;
     height: 524px;  
     position: relative; 
-    /* border: 1px solid #ddd; */
-    /* border-radius: 10px; */
-    /* overflow: hidden; */
-    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); */
+     
 }
 
 .card img {
@@ -40,4 +37,118 @@
     color: white; 
     padding: 5px 10px;
     font-size: 32px;
+} */
+
+
+.recent_activity {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.text {
+    font-weight: 700;
+    font-size: 6vw;
+    text-align: center;
+    margin-bottom: 20px;  
+}
+
+.cards-container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+
+    margin: 0 auto;  
+}
+
+
+.card {
+    width: 300px;            
+    max-width: 300px;
+    height: auto;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;   
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px 10px 0 0; 
+}
+
+.card-title {
+    font-weight: 700;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    border-radius: 0 0 10px 10px; 
+    position: relative;  
+    width: 100%;
+}
+
+ 
+@media (max-width: 768px) {
+    .text {
+        font-size: 8vw;
+    }
+    .card-title {
+        font-size: 1.3rem;
+    }
+}
+
+
+
+@media (max-width: 1072px) {
+    .text {
+        font-size: 10vw;
+    }
+
+    .cards-container {
+         
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        padding: 10px;
+        margin:0 auto;
+    }
+
+    .card {
+        width: 50%;       
+        max-width: 90%;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+       
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 630px) {
+    .text {
+        font-size: 8vw;
+    }
+    .card-title {
+        font-size: 1.3rem;
+    }
+    .card {
+        width: 30%;       
+        max-width: 90%;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
 }
