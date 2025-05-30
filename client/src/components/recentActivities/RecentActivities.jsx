@@ -1,12 +1,15 @@
 import "./RecentActivities.css"
+import holi from './holi.jpg'
+import ani from './anniversary.jpg'
+import meet from './meet.jpg'
 export default function RecentActivities() {
     return (
         <div className="recent_activity">
         <h1 className="text">Recent Activity</h1>
         <div className="cards-container">
-            <Card imgSrc="Rectangle_8545.png" title="Garbage Collection" />
-             <Card imgSrc="Rectangle 8546.png" title="Plantation" />
-            <Card imgSrc="Group_427321225.png" title="" />
+            <Card imgSrc={holi} title="Holi Milan Samaroh" />
+             <Card imgSrc={ani} title="Unnati Anniversary" />
+            <Card imgSrc={meet} title="Monthly Team Meet" />
         </div>
         </div>
     );

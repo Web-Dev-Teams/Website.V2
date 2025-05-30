@@ -1,0 +1,147 @@
+.HeaderContainer{
+    height: 167px;
+      width: 1440px;
+ 
+      display: flex;
+      justify-content: space-evenly;
+      background-color: #F5F5F5;
+      position: relative;
+      
+      
+}
+.logo{
+    z-index: 10;
+    height: 148px;
+    width: 148px;
+    background-color:#008080;
+    padding-left: 41px;
+    clip-path: polygon(0 0,100% 0,100% 80%);
+ 
+   }
+.logo2{
+ 
+    position: absolute;
+    top: 11px;
+    left: 41px; 
+    z-index: 100;
+    width: 148px;
+    height: 148px;
+    clip-path: circle(44% at center);
+}   
+.UWS{
+ 
+    height: 167px;
+    display: flex;
+    flex-direction: column;
+}
+.UWS-Heading{
+    display: flex;
+     
+    height: 120px;
+    justify-content:space-around;
+    background-color: #008080;
+    color: white;
+    width: calc(1440px - 148px);
+
+}
+.UWS-Header{
+    margin-left: 15vw;
+}
+.UWS-Heading p{
+ 
+    font-weight: 400;
+    font-style: normal;
+    font-family: Italianno;
+    font-size: 44px;
+    line-height: 1px;
+    margin-top: 14px;
+    margin-bottom: 0;
+    height: 58px;
+    width: 564px;
+    
+}
+.UWS-Heading h1{
+    font-family: "Inter",serif;
+    font-weight: 700;
+    font-size: 48px;
+    margin-top:18px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.UWS-about{
+ 
+    height: 47px;
+    margin-bottom: 0px;
+    background-color: #F5F5F5;
+}
+.UWS-about ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    gap: 5px;
+    height: 47px;
+    margin-top: 0px;
+ 
+    font-family: "Roboto", serif;
+    font-size: 26px;
+    font-weight: 400;
+ 
+    margin-left: 13vw;
+    cursor: pointer;
+}
+.UWS button{
+    border: none;
+    outline: none;
+    background-color: #E48D31;
+    width: 263px;
+    height: 78px;
+    border-radius: 39px;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 26px;
+    color: white;
+    cursor: pointer;
+}
+
+.active-class{
+    border: #008080 1px solid;
+    border-radius: 30px;
+    padding: 5px 14px;
+    font-size: 20px;
+    background-color: #008080;
+    text-decoration: none;
+    color:#fffefe;
+}
+
+.not-active-class{
+    text-decoration: none;
+    color: black;
+}
+.contact-dropdown {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    top: 50px;  
+  }
+  
+  .contact-dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .contact-dropdown li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-dropdown li:last-child {
+    margin-bottom: 0;
+  }
+  .dummy_para{
+    width: 1440px;
+    padding: 20px;
+}
+
+ 

@@ -22,8 +22,7 @@ function Volunteers() {
       <RecentActivity/>
       
       <Community/>
-      <Footer/>
-      
+     <Footer/>  
       
     </div>
   );
