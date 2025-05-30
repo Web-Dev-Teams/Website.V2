@@ -48,3 +48,12 @@
     border-radius: 18px;
     cursor: pointer;
 }
+@media only screen and (max-width:990px) {
+    .Layout7{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        justify-content: space-evenly;
+    }
+    
+}

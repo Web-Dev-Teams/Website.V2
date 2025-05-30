@@ -1,13 +1,12 @@
 .HeaderContainer{
     height: 167px;
-      width: 1440px;
-      /* border: 1px solid red; */
-      display: flex;
-      justify-content: space-evenly;
-      background-color: #F5F5F5;
-      position: relative;
-      
-      
+    width: 1440px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F5F5F5;
+    position: relative;
+    flex-wrap: wrap;      
 }
 .logo{
     z-index: 10;
@@ -32,6 +31,7 @@
     /* border: 3px solid blue; */
     height: 167px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 .UWS-Heading{
@@ -42,6 +42,7 @@
     background-color: #008080;
     color: white;
     width: calc(1440px - 148px);
+    flex-wrap: wrap;
 
 }
 .UWS-Header{
@@ -143,3 +144,43 @@
     width: 1440px;
     padding: 20px;
 }
+
+/* 
+@media only screen and (min-width:600px) and (max-width:900px) {
+    .UWS-Heading h1{
+        font-size: 36px;
+    }
+    .UWS-Heading p{
+        font-size: 32px;
+    }
+    .UWS button{
+        width: 200px;
+        height: 58px;
+        font-size: 30px;
+    }
+    .UWS-about ul{
+        display: block;
+    }
+    .logo{
+        z-index: 10;
+        height: 148px;
+        width: 148px;
+        background-color:#008080;
+        /* padding-left: 41px; */
+        /* clip-path: polygon(0 0,100% 0,100% 80%); */
+        /* border: 5px solid #008080; */
+       /* }
+    .logo2{
+        /* border: 3px solid red; */
+        /* position: absolute;
+        top: 11px;
+        left: 241px; 
+        z-index: 100;
+        width: 148px;
+        height: 148px;
+        clip-path: circle(44% at center); */
+    /* } */ 
+
+
+    
+/* } */ 

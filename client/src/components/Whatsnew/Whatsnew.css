@@ -1,16 +1,23 @@
+.whatsnew{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
 .whatsnew-box{
     display: flex;
-    width: 1372px;
+    width: 100%;
     height: 228px;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 20px 35px;
 }
 .whatsnew-left{
-    width: 270px;
+    width: 20%;
     height: 228px;
 }
 .whatsnew-right{
-    width: 1065px;
+    width: 70%;
     height: 228px;
     display: flex;
     flex-direction: column;
@@ -39,6 +46,57 @@
     font-size: 28px;
     font-weight: 400;
     font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
-
-
 } 
+@media only screen and (min-width:700px) and (max-width: 1000px) {
+    .whatsnew-box{
+        width: 80%;
+        /* border: 2px solid red; */
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .whatsnew-left{
+        width: 20%;
+    }
+    .whatsnew-right{
+        width: 50%;
+    }
+    
+}
+@media only screen and (min-width:350px) and (max-width: 700px){
+    .whatsnew{
+        margin-left: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: purple 2px solid;
+    }
+    .whatsnew-box{
+        width: 80%;
+        /* border: 2px solid red; */
+        /* margin-left: auto; */
+        /* padding-left: auto; */
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content:center;
+        align-items: center;
+    }
+    .whatsnew-left{
+        width: 50%;
+        margin-left: auto;
+    }
+    .whatsnew-right{
+       width: 50%;
+       margin-left: auto;
+       /* text-align: center; */
+    }
+    /* .whatsnew-right button{
+        margin-left: 15%;
+    }
+    .whatsnew-right-heading{
+        margin-left: 7%;
+    } */
+    
+}

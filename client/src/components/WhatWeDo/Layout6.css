@@ -1,7 +1,7 @@
 .Layout6-container{
     background-color: #EAFFFF;
-    width: 1440px;
-    height: 643px;
+    width: 100%;
+    height: auto;
     margin: 40px 0;
     padding: 20px 20px 0 20px;
 }
@@ -12,7 +12,7 @@
     font-family: "oswald",sans-serif;
 }
 .Layout6 img{
-    width: 499px;
+    width: 40%;
     height: 416px;
 }
 .Layout6{
@@ -40,4 +40,38 @@
     width: 319px;
     height: 248px;
 
+}
+@media only screen and (min-width:700px) and (max-width:1050px) {
+    .Layout6-container{
+        width: 100%;
+        flex-direction: column;
+        margin-left: auto;
+    }
+    .Layout6-container h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+}
+@media only screen and (max-width:700px){
+    .Layout6{
+        width: 100%;
+        flex-direction: column;
+        margin-left: auto;
+    }
+    .Layout6-container h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .Layout6-container{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+    }
+    
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import './DigiXplore.css'
 import Layout1 from '../../components/WhatWeDo/Layout1'
 import Header from '../../components/Header/Header'
 import Layout2 from '../../components/WhatWeDo/Layout2'
@@ -11,7 +12,8 @@ import Footer from '../../components/Footer/Footer'
 
 const DigiXplore = () => {
   return (
-    <div>
+    <div style={{display: "flex", justifyContent: "center", margin: "0 auto"}}>
+    <div  className='digixplore'>
       <Header/>
       <Layout1 image="./DigiXplore.png" heading="DigiXplore" bg="#9A41DA"/>
       <Layout2 content="Unnati Welfare Society has introduced a visionary program called &quot;Digixplore&quot;, dedicated to providing free digital education to students of government schools. Conducted with the aim of bridging the digital divide, this initiative empowers students with essential computer skills and knowledge, ensuring they are well-prepared for the demands of a technology-driven world. Through interactive sessions, hands-on activities, and practical learning, &quot;Digixplore&quot; makes complex digital concepts accessible and engaging. By fostering digital literacy, this program not only enhances students' career prospects but also nurtures their confidence to navigate the modern digital landscape. With a focus on inclusivity and empowerment, &quot;Digixplore&quot; paves the way for a brighter, tech-enabled future for every child." bg1="#F3E8FB" color="#9A41DA" image1="./Polygon-2.png"/>
@@ -29,6 +31,7 @@ Thus, the idea of Akshar was born: a program designed to teach English to rural 
 
       <Layout7 name="Mukesh" name2="Rakesh" contPara1="Mukesh, a boy from a village, joined the &quot;Akshar&quot; English program at Unnati Welfare Society. Through consistent" contPara2=" weekend classes, he overcame language barriers and now confidently speaks and writes English, marking a remarkable transformation in his life." image= "./pic1.png" image2="./pic2.png" cont2Para1="Rakesh, a boy from a village, joined the &quot;Akshar&quot; English program at Unnati Welfare Society. Through consistent" cont2Para2="weekend classes, he overcame language barriers and now confidently speaks and writes English, marking a remarkable transformation in his life." color="#AC63E0" />
       <Footer/>
+    </div>
     </div>
   )
 }
