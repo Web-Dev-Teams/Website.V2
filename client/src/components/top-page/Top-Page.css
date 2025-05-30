@@ -15,7 +15,7 @@
     object-fit: cover; 
 }
 
-.text {
+.text-para{
    
     margin-top: 50px;
     padding: 0 20px;
@@ -25,7 +25,7 @@
     color: #333;
 }
 
-.text p{
+.text-para p{
     font-family: "Roboto Flex", sans-serif;
     text-align: center;
     margin-left: 60px;
@@ -33,7 +33,7 @@
 }
 
 
-.text button {
+.text-para button {
     margin-top: 15px;
     width: 503px;
     height: 63px;
@@ -50,7 +50,7 @@
 }
 
 
-.text button:hover {
+.text-para button:hover {
     background-color: gray;
 }
 

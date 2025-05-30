@@ -16,7 +16,7 @@ const Card = (props) => {
         <img src={props.image} alt="" />
         <h1>{props.heading}</h1>
       </div>
-      <li><h4>{props.date}</h4></li>
+      <h4>{props.date}</h4>
       <p>{props.content}</p>
       <button onClick={() => handleClick(props.title)}>Know More</button>
 

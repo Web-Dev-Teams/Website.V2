@@ -41,7 +41,7 @@
     justify-content: center;
     align-items: center;
 }
-.card li h4{
+.card h4{
     text-align: right;
     color: #FBD784;
     font-size: 20px;

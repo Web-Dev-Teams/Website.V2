@@ -12,12 +12,12 @@ const Homepage = () => {
   return (
     <div>
       <Header/>
-      <Photos/>
+       <Photos/>  
       <AboutUWS/>
-      <FirstAward/>
+      {/* <FirstAward/>
       <SuccessStory/>
-      <Whatsnewsection/>
-      <Footer/>
+      <Whatsnewsection/> */}
+      {/* <Footer/> */}
       
     </div>
   )

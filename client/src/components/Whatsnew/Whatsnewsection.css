@@ -4,13 +4,15 @@
     justify-content: center;
     align-items: center;
     margin-top: 80px;
+    width: 100%;
 }
 .heading-whatsnew{
-    width: 1372px;
+    width: 98%;
     cursor: pointer;
     height: 62px;
     border-bottom: #E8A13E 5px solid;
     display: flex;
+    flex-wrap: wrap;
 }
 .heading-whatsnew h1{
     width: 300px;
@@ -24,4 +26,11 @@
     width: 57px;
     height: 61px;
     background-color: #E3972C;
+}
+@media only screen and (max-width:1000px) {
+    .heading-whatsnew{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }

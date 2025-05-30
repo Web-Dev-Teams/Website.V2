@@ -6,30 +6,32 @@
 .text{
     
     font-weight: 700;
-    font-size: 89px;
+    /* color: red; */
+    font-size:70px;
+    margin-left: 4vw;
 }
 
 .cards-container {
     display: flex;
     justify-content: center; 
     gap: 20px; 
-    padding: 20px;
+    padding: 0 20px 20px 20px ;
 }
 
-.card {
+.cards {
     width: 380px;
     height: 524px;  
     position: relative; 
      
 }
 
-.card img {
+.cards img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.card-title {
+.cards-title {
     position: absolute;
     bottom: 10px; 
     text-align: center; 

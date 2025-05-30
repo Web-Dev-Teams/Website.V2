@@ -1,12 +1,15 @@
 /* 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Varela+Round&display=swap');
 
+.community{
+    width: 1440px;
+}
 .community h1 {
-    text-align: center;
-    margin-top: 150px;
+    margin-top: 10px;
     font-weight: 700;
     font-size: 64px;
-    color: #333;
+    margin-left: 4.2vw;
+    color: #000000;
 }
 .community-container {
     display: grid;
@@ -26,6 +29,7 @@
     text-align: center;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
+    margin-bottom: 7px;
    
 }
 

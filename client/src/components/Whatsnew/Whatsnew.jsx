@@ -3,7 +3,7 @@ import './Whatsnew.css'
 
 const Whatsnew = (props) => {
   return (
-    <div>
+    <div className='whatsnew'>
       <div className='whatsnew-box'>
         <div className='whatsnew-left'>
             <img src={props.image} alt="picture" />
