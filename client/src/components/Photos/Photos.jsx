@@ -1,10 +1,11 @@
 import React, { use, useEffect, useState } from 'react'
 import "./Photos.css"
+import img from "./img.jpg"
 
 const Photos = () => {
     const [currentState, setCurrentState] = useState(1);
     const photos = [
-        <img src="./Photos/slide.png" alt="" className='photo'/>,
+        <img src={img} alt="" className='photo'/>,
         <img src="./Photos/slide.png" alt="" className='photo'/>,
         <img src="./Photos/slide.png" alt="" className='photo'/>,
         <img src="./Photos/slide.png" alt="" className='photo'/>

@@ -14,10 +14,10 @@ const Homepage = () => {
       <Header/>
        <Photos/>  
       <AboutUWS/>
-      {/* <FirstAward/>
+  <FirstAward/>
       <SuccessStory/>
-      <Whatsnewsection/> */}
-      {/* <Footer/> */}
+      <Whatsnewsection/> 
+    <Footer/>  
       
     </div>
   )
