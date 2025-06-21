@@ -11,6 +11,8 @@ import Donation from './pages/Donation';
 import Contactus from './pages/ContactUs/Contactus';
 import FaqPage from './pages/ContactUs/FaqPage';
 import Volunteers from './pages/Volunteers/Volunteers';
+import { AboutUs } from './pages/About-us/AboutUs';
+import Gallery from './pages/Media/Media';
 
 
 function App() {
@@ -59,7 +61,14 @@ function App() {
       {
         path: '/contactus',
         element: <Contactus/>
-      }   
+      } ,{
+        path:'/aboutus',
+        element:<AboutUs/>
+      }  ,
+      {
+        path:'/media',
+        element:<Gallery/>
+      } 
     ]
   );
 

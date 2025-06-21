@@ -4,7 +4,7 @@ import Menu from '../WhatWeDo/Menu';
 import ContactMenu from '../Contactus/ContactMenu';
 import './Header.css';
 
-const Header = () => {
+  const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isContactOpen, setIsContactOpen] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -45,8 +45,8 @@ const Header = () => {
                         <h1>UNNATI WELFARE SOCIETY</h1>
                         <p>Revolutionizing present, Transforming Future</p>
                     </div>
-                    <NavLink to='/donation' className="donate-link">
-                        <button>Donate</button>
+                    <NavLink to='/' className="donate-link">
+                        <button onClick={() => window.open('http://localhost:5173/', '_blank')} >Donate</button>
                     </NavLink>
                     
                 </div>

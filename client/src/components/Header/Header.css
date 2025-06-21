@@ -1,4 +1,4 @@
- 
+
 .HeaderContainer {
   height: 167px;
   width: 100%;
@@ -22,7 +22,7 @@
 .logo2 {
   position: absolute;
   top: 11px;
-  left: 41px; 
+  left: 41px;
   z-index: 100;
   width: 148px;
   height: 148px;
@@ -42,7 +42,7 @@
   width: 100%;
 }
 
- 
+
 .hamburger {
   position: absolute;
   top: 20px;
@@ -54,14 +54,14 @@
   display: none;
   padding: 5px;
 }
- 
+
 .UWS-Heading {
   display: flex;
   height: 120px;
   justify-content: space-around;
   background-color: #008080;
   color: white;
-  width: calc(100% - 148px);
+  width: calc(100% - 69px);
 }
 
 .UWS-Header {
@@ -129,7 +129,7 @@
   color: black;
 }
 
-/* Mobile Navigation */
+
 .mobile-nav {
   display: none;
   position: absolute;
@@ -158,17 +158,16 @@
   border-bottom: 1px solid #ddd;
 }
 
-/* Responsive Styles */
-@media (max-width: 1316px) {
+@media (max-width: 1355px) {
   .HeaderContainer {
     height: auto;
     flex-direction: column;
   }
-  
+
   .logo, .logo2 {
     display: none;
   }
-  
+
   .UWS-Heading {
     width: 100%;
     display: flex;
@@ -179,37 +178,37 @@
     text-align: center;
     justify-content: center;
   }
-  
+
   .UWS-Header {
     margin-left: 0;
   }
-  
+
   .UWS-Heading h1 {
     font-size: 28px;
   }
-  
+
   .UWS-Heading p {
     font-size: 24px;
   }
-  
+
   .UWS button {
     width: 150px;
     height: 50px;
     font-size: 24px;
     margin: 30px auto;
   }
-  
+
   .desktop-nav {
     display: none;
   }
-  
+
  .hamburger {
   display: block;
   color: white;
-  margin-left: 20px; /* or any value you prefer */
+  margin-left: 20px;
 }
 
-  
+
   .mobile-nav {
     display: block;
   }
@@ -220,11 +219,11 @@
   .UWS-Heading h1 {
     font-size: 24px;
   }
-  
+
   .UWS-Heading p {
     font-size: 20px;
   }
-  
+
   .UWS button {
     width: 120px;
     height: 40px;
