@@ -1,27 +1,29 @@
 import "./RecentActivities.css"
-
-
-function Cards({ imgSrc, title }) {
-    return (
-        
-        <>
-        
-        <div className="cards">
-            <img src={imgSrc} alt={title} />
-            <div className="cards-title">{title}</div>
-        </div>
-        </>
-    );
-}
+import holi from "./holi.jpg"
+import anniversary from "./anniversary.jpg"
+import meet from "./meet.jpg"
 export default function RecentActivities() {
     return (
         <div className="recent_activity">
         <h1 className="text">Recent Activity</h1>
         <div className="cards-container">
-            <Cards imgSrc="Rectangle_8545.png" title="Garbage Collection" />
-             <Cards imgSrc="Rectangle 8546.png" title="Plantation" />
-            <Cards imgSrc="Group_427321225.png" title="" />
+            <Card imgSrc={holi} title="Garbage Collection" />
+             <Card imgSrc={anniversary} title="Plantation" />
+            <Card imgSrc={meet} title="Monthly Meet" />
         </div>
         </div>
+    );
+}
+
+function Card({ imgSrc, title }) {
+    return (
+        
+        <>
+        
+        <div className="card">
+            <img src={imgSrc} alt={title} />
+            <div className="card-title">{title}</div>
+        </div>
+        </>
     );
 }

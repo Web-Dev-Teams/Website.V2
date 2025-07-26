@@ -1,24 +1,136 @@
-.about-UWS{
-    width: 1359px;
-    height: 442px;
-    font-size: 27px;
-    font-weight: 400;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid red; */
-    color: #292929;
-    margin:40px;
-    
-    
+/* Base styling */
+.about-UWS {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #292929;
+  box-sizing: border-box;
+}
 
+.about-content {
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
-.about-UWS div{
-    padding: 40px;
-    gap: 5px;
-    text-align: center;
+
+.about-content p {
+  margin-bottom: 1.2em;
+  line-height: 1.6;
+  text-align: justify;
+  hyphens: auto;
 }
-#read-more a{
-    color: #008080D1;
-    text-decoration: none;
+
+/* Link styling */
+#read-more {
+  text-align: center;
+  margin-top: 2em;
+}
+
+#read-more a {
+  color: #008080D1;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.3s ease;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+#read-more a:hover {
+  background-color: #00808015;
+  transform: translateY(-2px);
+}
+
+#read-more img {
+  width: 16px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+#read-more a:hover img {
+  transform: translateX(3px);
+}
+
+/* Responsive design - Tablet */
+@media (max-width: 1204px) {
+  .about-UWS {
+    margin: 30px auto;
+    padding: 15px;
+  }
+  
+  .about-content {
+    padding: 15px;
+  }
+  
+  .about-content p {
+    line-height: 1.5;
+  }
+}
+
+/* Responsive design - Mobile Landscape */
+@media (max-width: 768px) {
+  .about-UWS {
+    font-size: 1.1rem;
+    margin: 25px auto;
+    padding: 12px;
+  }
+
+  .about-content {
+    padding: 10px;
+  }
+
+  #read-more a {
+    font-size: 1rem;
+  }
+
+  #read-more img {
+    width: 14px;
+  }
+}
+
+/* Responsive design - Mobile Portrait */
+@media (max-width: 480px) {
+  .about-UWS {
+    font-size: 1rem;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .about-content {
+    padding: 8px;
+  }
+  
+  .about-content p {
+    line-height: 1.4;
+    text-align: left;
+    hyphens: none;
+  }
+
+  #read-more {
+    margin-top: 1.5em;
+  }
+  
+  #read-more a {
+    font-size: 0.95rem;
+    padding: 6px 12px;
+  }
+
+  #read-more img {
+    width: 12px;
+  }
+}
+
+/* Very small devices */
+@media (max-width: 360px) {
+  .about-UWS {
+    font-size: 0.95rem;
+  }
+  
+  #read-more a {
+    font-size: 0.9rem;
+  }
 }

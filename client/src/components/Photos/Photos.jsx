@@ -1,23 +1,25 @@
 import React, { use, useEffect, useState } from 'react'
 import "./Photos.css"
+import img from "./img.jpg"
+import img2 from '../recentActivities/holi.jpg'
+import rang from '../recentActivities/rang.jpg'
+import meet from '../recentActivities/meet.jpg'
 
 const Photos = () => {
     const [currentState, setCurrentState] = useState(1);
     const photos = [
-        <img src="./Photos/slide.png" alt="" className='photo'/>,
-        <img src="./Photos/slide.png" alt="" className='photo'/>,
-        <img src="./Photos/slide.png" alt="" className='photo'/>,
-        <img src="./Photos/slide.png" alt="" className='photo'/>
+        <img src={img} alt="" className='photo'/>,
+        <img src={img2} alt="" className='photo'/>,
+        <img src={rang} alt="" className='photo'/>,
+        <img src={meet} alt="" className='photo'/>
     ];
     let length = photos.length;
-    const handleNextClick = () => {
-        if(currentState < length){
-            setCurrentState(currentState+1);
-        }
-        else{
-            setCurrentState(1);
-        }  
-    }
+  const handleNextClick = () => {
+    setCurrentState(prev =>
+        prev < length ? prev + 1 : 1
+    );
+};
+
     const handlePrevClick = () => {
         if(currentState > 1){
             setCurrentState(currentState-1);
@@ -26,6 +28,18 @@ const Photos = () => {
             setCurrentState(length);
         }
     }
+
+ 
+  // 🔄 Auto-slide every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNextClick();
+    }, 3000); // change 3000 to adjust slide speed
+
+    // cleanup on unmount
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className='PhotosContainer'>
         {photos[currentState-1]}
