@@ -13,6 +13,7 @@ import FaqPage from './pages/ContactUs/FaqPage';
 import Volunteers from './pages/Volunteers/Volunteers';
 import { AboutUs } from './pages/About-us/AboutUs';
 import Gallery from './pages/Media/Media';
+import { Resources } from './pages/Resources/Resources';
 
 
 function App() {
@@ -68,7 +69,11 @@ function App() {
       {
         path:'/media',
         element:<Gallery/>
-      } 
+      } ,
+      {
+        path:'/resources',
+        element:<Resources/>
+      }
     ]
   );
 

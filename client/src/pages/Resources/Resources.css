@@ -1,0 +1,45 @@
+.box-1 {
+  padding: 40px;
+  background-color: #f9f9f9;
+  min-height: 80vh;
+}
+
+.box-1 h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #222;
+  text-align: center;
+}
+
+ 
+.pdf-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+ 
+.pdf-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.pdf-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.pdf-card a {
+  text-decoration: none;
+  color: #0056b3;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: block;
+}
