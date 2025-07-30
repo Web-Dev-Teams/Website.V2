@@ -1,5 +1,4 @@
 import React from 'react'
-import { Outlet, useNavigate } from 'react-router-dom'
 import Header from '../../components/Header/Header'
 import Layout3 from '../../components/WhatWeDo/Layout3'
 import Layout from '../../components/AwardSuccess/Layout'
@@ -13,7 +12,7 @@ const Mainpage = () => {
   return (
     <div>
         <Header/>
-        <Layout heading="Marching Together for a Greener Tomorrow." content="Marching alongside children to spread awareness and inspire action for saving the environment, we strive to cultivate a sense of responsibility and stewardship for our planet. Together, we empower the next generation to become advocates for a greener, cleaner future, one step at a time." color="#008080" bg="#FFFFFF"  image="./pic3.png"/>
+        <Layout heading="Impact at Babupur Middle School" content="Unnati has brought a wave of hope and change to our school. Many of our students come from families that struggle to meet even basic needs, and often miss out on opportunities to learn and grow. Through their programs – DigiXplorea and Netritva– Unnati has opened new doors for our children. They are now confident using digital tools, thinking about their future careers, and strengthening their basics in reading, writing, and math." color="#008080" bg="#FFFFFF"  image="../../components/community/digiexp.jpg"/>
         <Layout3 heading="Upcoming" color="#000000" bg="#E8A13E" bg2="#E8A12E"/>
         <Whatsnew image="./pic4.png" heading="Organizing sports events" content="we had an event at IIIT Bhagalpur there we had invited the founder of Unnati welfare society...."/>
         <Whatsnew image="./pic5.png" heading="Contests in schools" content="we had an event at IIIT Bhagalpur there we had invited the founder of Unnati welfare society...."/>

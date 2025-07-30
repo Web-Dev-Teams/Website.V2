@@ -1,14 +1,16 @@
 
 .HeaderContainer {
   height: 167px;
-  width: 100%;
+  min-width: 100%;
   max-width: 1440px;
   display: flex;
   justify-content: space-evenly;
   background-color: #F5F5F5;
   position: relative;
   margin: 0 auto;
+  font-weight: 600;
 }
+
 
 .logo {
   z-index: 10;
@@ -104,6 +106,7 @@
 .UWS-about {
   height: 47px;
   background-color: #F5F5F5;
+
 }
 
 .UWS-about ul {
@@ -127,6 +130,7 @@
 }
 
 .not-active-class {
+  text-decoration: none;
   color: black;
 }
 

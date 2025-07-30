@@ -1,4 +1,6 @@
 .box-1 {
+  width: 100%;
+  border: 2px solid red;
   padding: 40px;
   background-color: #f9f9f9;
   min-height: 80vh;
@@ -17,7 +19,26 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  margin-top: 10px;
 }
+.pdf-container2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  color: #000;
+}
+.pdf-container2 ul li{
+  a {
+    color: inherit;        
+    text-decoration: none; 
+  }
+}
+
+
 
  
 .pdf-card {
