@@ -17,65 +17,16 @@ import { Resources } from './pages/Resources/Resources';
 
 
 function App() {
-  const router = createBrowserRouter(
-    [
-      {
-        path:'/',
-        element: <Homepage/>
-      },
-      {
-        path:'/whatwedo',
-        element: <Mainpage/>,
-      },
-      {
-        path:'/digiXplore',
-         element: <DigiXplore/>
-      },
-      {
-         path:'/netritva',
-         element:<Netritva/>
-      },
-      {
-         path:'/prayaas',
-        element:<Prayaas/>
-      },
-      {
-        path:'/eSafe',
-        element:<ESafe/>
-      },
-      {
-        path:'/akshar',
-         element:<Akshar/>
-      },
-      {
-        path:'/donation',
-        element:<Donation/>
-      },
-      {
-        path:'/volunteer',
-        element:<Volunteers/>
-      },
-      {  
-        path: '/faq',
-        element: <FaqPage/>
-      },
-      {
-        path: '/contactus',
-        element: <Contactus/>
-      } ,{
-        path:'/aboutus',
-        element:<AboutUs/>
-      }  ,
-      {
-        path:'/media',
-        element:<Gallery/>
-      } ,
-      {
-        path:'/resources',
-        element:<Resources/>
-      }
-    ]
-  );
+  const router = createBrowserRouter([
+    {
+      path: '/faq',
+      element: <FaqPage />
+    },
+    {
+      path: '/contactus',
+      element: <Contactus />
+    }
+  ]);
 
 
 
