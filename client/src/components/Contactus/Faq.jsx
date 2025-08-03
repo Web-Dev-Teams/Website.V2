@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import './Faq.css'
 const Faq=()=>{
     const [activeQuestion,setActiveQuestion]=useState(null);
@@ -61,7 +61,21 @@ const Faq=()=>{
     return(
         
         <div>       
-=            <img src="/Group 427321218.png" alt="FAQ Image" />
+=           <img
+                src="/Group 427321218.png"
+                alt="FAQ Image"
+                style={{
+                    width: '100%',
+                    height: 'auto',
+                    
+                    
+                    margin: 'clamp(1.5rem, 4vw, 3rem) 0 0 0',
+                    display: 'block',
+                    objectFit: 'contain',
+                    transition: 'margin 0.3s ease-in-out'
+                }}
+            />
+
             <div className="faq-container">
                 {questionsAndAnswers.map((item, index) => (
                     <div key={index} className="faq-item">

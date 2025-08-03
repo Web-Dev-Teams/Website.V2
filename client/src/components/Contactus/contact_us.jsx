@@ -16,20 +16,26 @@ const ContactUs = () => {
 
   return (
     <div>
-      <img
-  src="/Frame 2610660.png"
-  alt="CONTACT US IMAGE"
+     <img
+  src="/Group 427321218.png"
+  alt="FAQ Image"
   style={{
     width: '100%',
     height: 'auto',
+    minHeight: '180px',
+    maxHeight: '45vh',
     display: 'block',
-    objectFit: 'cover',
+    objectFit: 'contain',
     borderRadius: '0.5rem',
     boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
-    marginBottom: '2rem',
-    maxHeight: '45vh',
+    marginTop: 'clamp(0.5rem, 2vh + 1rem, 2rem)',   // smaller on mobile, smooth growth
+    marginBottom: 'clamp(1rem, 4vw, 2rem)',   
+    paddingInline: 'clamp(0.5rem, 4vw, 2rem)',
+    boxSizing: 'border-box',
   }}
 />
+
+
 
 
       <div
