@@ -1,7 +1,8 @@
 .faq-container {
-    width: min(90%, 1000px);
+    width: min(95%, 1400px);
     margin: 2rem auto;
     padding: 1rem;
+    transition: width 0.3s;
 }
 
 .faq-item {

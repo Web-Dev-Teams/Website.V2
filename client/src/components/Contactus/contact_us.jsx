@@ -25,7 +25,7 @@ const ContactUs = () => {
       boxSizing: 'border-box',
     }}>
       <img
-        src="/Group 427321218.png"
+        src="Frame 2610660.png"
         alt="FAQ Image"
         style={{
           width: '100vw',
