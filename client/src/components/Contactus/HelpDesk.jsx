@@ -62,9 +62,9 @@ const Helpdesk = () => {
   // Styles defined inside component so smallScreen is accessible
   const styles = {
         helpdeskContainer: {
-      width: 'min(90%, 600px)',
+      width: 'min(100%, 600px)',
 
-      maxWidth: '38rem',
+      maxWidth: '100%',
       margin: smallScreen ? '1.25rem auto' : '4.5rem 4.5% 2.5rem 2%',
       padding: smallScreen ? '1rem 0.75rem' : '1.25rem',
       backgroundColor: '#f0f0f0',

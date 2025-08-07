@@ -4,11 +4,11 @@ import ContactUs from '../../components/Contactus/contact_us';
 import Footer from '../../components/Footer/Footer';
 const Contactus=()=>{
     return(
-        <div>
+        <>
             <Header/>
             <ContactUs/>
             <Footer/>
-        </div>
+        </>
     )
 
 }
