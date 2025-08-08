@@ -1,61 +1,66 @@
-import React from 'react';
+import useResponsive from '../../hooks/useResponsive';
 
 const Template = (props) => {
-    return (
-        <div>
-            <h2 style={templateHeadingStyle}>{props.queryType}</h2>
-            <p style={templateTextStyle}>{props.email}</p>
-            <p style={templateTextStyle}>{props.name} : {props.number}</p>
-        </div>
-    );
-}
+  return (
+    <div>
+      <h2 style={props.styles.templateHeadingStyle}>{props.queryType}</h2>
+      <p style={props.styles.templateTextStyle}>{props.email}</p>
+      <p style={props.styles.templateTextStyle}>{props.name} : {props.number}</p>
+    </div>
+  );
+};
 
 const DetailBox = () => {
-    return (
-        <div style={detailBoxContainerStyle}>
-            <Template 
-                queryType="All General Queries" 
-                name="Whatsapp Number" 
-                email="info.unnatiwelfaresociety@gmail.com" 
-                number="8058060375" 
-            />
-            <Template 
-                queryType="Donation Related Queries" 
-                name="Devanshu Singh" 
-                email="donation.unnatiwelfaresociety@gmail.com" 
-                number="8058060375" 
-            />
-            <Template 
-                queryType="For Media-Related Queries" 
-                name="Shivam Kumar Gautam" 
-                email="media.unnatiwelfaresociety@gmail.com" 
-                number="8058060375" 
-            />
-        </div>
-    );
-}
+  const smallScreen = useResponsive();
 
-const detailBoxContainerStyle = {
-    width: '500px', 
-    height: 'auto',
-    marginLeft: '50px',
-    marginTop:'75px',
-    padding: '20px',
-    backgroundColor: '#f9f9f9',
-    borderRadius: '8px',
-    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
-};
+  const styles = {
+    detailBoxContainerStyle: {
+      width: '100%',
+      maxWidth: smallScreen ? '90%' : '31rem',
+      margin: smallScreen ? '1.5rem auto' : '4rem 1rem',
+      padding: smallScreen ? '1rem' : '1.5rem',
+      backgroundColor: '#f9f9f9',
+      borderRadius: '0.5rem',
+      boxShadow: '0 0.25rem 0.375rem rgba(0, 0, 0, 0.1)',
+      boxSizing: 'border-box',
+    },
+    templateHeadingStyle: {
+      fontSize: smallScreen ? '1.5rem' : '2rem',
+      fontWeight: 'bold',
+      marginBottom: smallScreen ? '0.5rem' : '0.625rem',
+    },
+    templateTextStyle: {
+      fontSize: smallScreen ? '1rem' : '1.375rem',
+      marginBottom: smallScreen ? '0.25rem' : '0.3125rem',
+      fontWeight: 'normal',
+    }
+  };
 
-const templateHeadingStyle = {
-    fontSize: '32px',  
-    fontWeight: 'bold',
-    marginBottom: '10px',
-};
-
-const templateTextStyle = {
-    fontSize: '22px',  
-    marginBottom: '5px',
-    fontWeight: 'normal',
+  return (
+    <div style={styles.detailBoxContainerStyle}>
+      <Template 
+        queryType="All General Queries" 
+        name="Whatsapp Number" 
+        email="info.unnatiwelfaresociety@gmail.com" 
+        number="8058060375"
+        styles={styles}
+      />
+      <Template 
+        queryType="Donation Related Queries" 
+        name="Devanshu Singh" 
+        email="donation.unnatiwelfaresociety@gmail.com" 
+        number="8058060375"
+        styles={styles}
+      />
+      <Template 
+        queryType="For Media-Related Queries" 
+        name="Shivam Kumar Gautam" 
+        email="media.unnatiwelfaresociety@gmail.com" 
+        number="8058060375"
+        styles={styles}
+      />
+    </div>
+  );
 };
 
 export default DetailBox;

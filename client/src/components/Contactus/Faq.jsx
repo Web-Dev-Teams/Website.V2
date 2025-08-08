@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
+import useResponsive from '../../hooks/useResponsive';
 import './Faq.css'
 const Faq=()=>{
     const [activeQuestion,setActiveQuestion]=useState(null);
+    const isSmallScreen = useResponsive();
     const questionsAndAnswers=[
         {
             question:"What is Unnati Welfare Society?",
@@ -56,12 +58,33 @@ const Faq=()=>{
         // If the same question is clicked, close it. Otherwise, open the clicked question.
         setActiveQuestion(activeQuestion === index ? null : index);
     };
+    return (
+        <div style={{
+            width: '100vw',
+            minWidth: '100vw',
+            maxWidth: '100vw',
+            margin: 0,
+            padding: 0,
+            overflowX: 'hidden',
+            boxSizing: 'border-box',
+        }}>
+            <img
+                src="/Group 427321218.png"
+                alt="FAQ Image"
+                style={{
+                    width: '100vw',
+                    minWidth: '100vw',
+                    maxWidth: '100vw',
+                    height: 'auto',
+                    margin: isSmallScreen ? '56px 0 0 0' : 0,
+                    display: 'block',
+                    objectFit: 'cover',
+                    transition: 'margin 0.3s ease-in-out',
+                    padding: 0,
+                    boxSizing: 'border-box',
+                }}
+            />
 
-
-    return(
-        
-        <div>       
-=            <img src="/Group 427321218.png" alt="FAQ Image" />
             <div className="faq-container">
                 {questionsAndAnswers.map((item, index) => (
                     <div key={index} className="faq-item">
@@ -82,9 +105,8 @@ const Faq=()=>{
                     </div>
                 ))}
             </div>
-            
         </div>
-    )
+    );
 }
 
-export default Faq
+export default Faq;
