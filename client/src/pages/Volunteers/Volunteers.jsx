@@ -9,9 +9,10 @@ import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import FadeUp from '../FadeUp'; // ✅ Import scroll animation
 
+
 function Volunteers() {
   return (
-    <div>
+    <div className="volunteers-fullwidth-bg">
       <Header />
       <FadeUp><Top /></FadeUp>
       <FadeUp><Banner /></FadeUp>

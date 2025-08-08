@@ -1,49 +1,76 @@
 .classmenu {
-    /* height: 125px; 
-    width: 200px; */
-    /* border: 1px solid black; */
     position: absolute;
-    top: 100%; 
-    right: 0%;  
-    background-color: transparent;
-    /* box-shadow: 0px 4px 6px rgba(0,0,0,0.1); */
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
     z-index: 1000;
-    margin-top: 10px;
+    margin-top: 0;
+    padding: 8px 0px;
+    min-width: 260px;
+    border: none;
 }
 
 .classmenu ul {
     list-style: none;
     margin: 0;
+    padding: 0;
+
     display: flex;
-    flex-direction: column;
-    gap: 2px;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
 }
 
 .classmenu ul li {
-    /* border: 1px solid black; */
-    /* text-decoration: none; */
-    color: white;
-    text-align: center;
-    padding: 4px 20px;
-    width: 100%;
+    padding: 0;
+    margin: 0;
+    gap:0px;
+    border: none;
+    background: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
 }
 
-.menu-actice-class {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 28px;
-    font-family: "Oswald", sans-serif;
-    background-color: #008080;
-}
-/* 
+
+/* Base styles for both buttons */
+.menu-actice-class,
 .menu-not-actice-class {
+    display: inline-block;
     text-decoration: none;
-    color: black;
-    font-size: 28px;
+    font-size: 1.1rem;
     font-family: "Oswald", sans-serif;
-    background-color: transparent;
+    padding: 10px 22px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+    background: #fff;
+    border: none;
 }
 
-.classmenu ul li:hover {
-    background-color: #E48D31; 
-} */
+/* Contact Us: default (purple text, white bg) */
+.menu-not-actice-class.contactus-link {
+    color: #9A41DA;
+    background: #fff;
+}
+.menu-not-actice-class.contactus-link:hover {
+    background: #9A41DA;
+    color: #fff;
+}
+.menu-actice-class.contactus-link {
+    background: #9A41DA;
+    color: #fff;
+}
+
+/* FAQ: default (orange text, white bg) */
+.menu-not-actice-class.faq-link {
+    color: #FF832C;
+    background: #fff;
+}
+.menu-not-actice-class.faq-link:hover,
+.menu-actice-class.faq-link {
+    background: #FF832C;
+    color: #fff;
+}

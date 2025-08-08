@@ -590,12 +590,12 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
   z-index: 1000;
-  min-width: 200px;
-  padding: 8px 0;
+  min-width: 0;
+  padding: 0;
 }
 
 .header-dropdown-menu a {
