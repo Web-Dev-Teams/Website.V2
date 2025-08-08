@@ -2,16 +2,29 @@ import React, { use, useEffect, useState } from 'react'
 import "./Photos.css"
 import img from "./img.jpg"
 import img2 from '../recentActivities/holi.jpg'
-import rang from '../recentActivities/rang.jpg'
+import digi9 from './HomePage/digi9.jpg'
 import meet from '../recentActivities/meet.jpg'
+import digi10 from './HomePage/digi10.jpg'
+import digi12 from './HomePage/digi12.jpg'
+import akshar1 from './HomePage/akshar1.jpg'
+import akshar2 from './HomePage/akshar2.jpg'
+import akshar3 from './HomePage/akshar3.jpg'
+import net1 from './HomePage/net1.jpg'
+import net2 from './HomePage/net2.jpg'
 
 const Photos = () => {
     const [currentState, setCurrentState] = useState(1);
     const photos = [
-        <img src={img} alt="" className='photo'/>,
-        <img src={img2} alt="" className='photo'/>,
-        <img src={rang} alt="" className='photo'/>,
-        <img src={meet} alt="" className='photo'/>
+        <img src={digi10} alt="" className='photo'/>,
+        <img src={digi12} alt="" className='photo'/>,
+        <img src={akshar1} alt="" className='photo'/>,
+        <img src={akshar2} alt="" className='photo'/>,
+        <img src={akshar3} alt="" className='photo'/>,
+        <img src={net1} alt="" className='photo'/>,
+        <img src={net2} alt="" className='photo'/>,
+        <img src={digi9} alt="" className='photo'/>
+        
+        
     ];
     let length = photos.length;
   const handleNextClick = () => {

@@ -34,10 +34,16 @@
     height: 133px;
     font-weight: 400;
 }
+.award-right{
+    width: 45%;
+    height: 466px;
+}
 .award-right img{
-    /* border: solid 2px red; */
+    border: solid 2px red;
     width: 100%;
     height: 466px;
+    border: none;
+    border-radius: 10px;
 }
 #view{
     color:#581B84;

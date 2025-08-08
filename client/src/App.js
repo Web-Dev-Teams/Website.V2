@@ -14,6 +14,7 @@ import Volunteers from './pages/Volunteers/Volunteers';
 import { AboutUs } from './pages/About-us/AboutUs';
 import Gallery from './pages/Media/Media';
 import { Resources } from './pages/Resources/Resources';
+import WhatsNew from './pages/WhatNewPage';
 
 
 function App() {
@@ -73,6 +74,11 @@ function App() {
       {
         path:'/resources',
         element:<Resources/>
+      },
+      {
+        path:'/whatsnew',
+        element:<WhatsNew/>
+
       }
     ]
   );

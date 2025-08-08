@@ -4,14 +4,14 @@
     align-items: center;
     background-color: #F5F5F5;
     padding: 50px 40px;
-}
+ }
 .Layout7-about{
     display: flex;
     flex-direction: column;
     background: #F1F1F1;
     border-radius: 15px;
     width: 579px;
-    height: 621px;
+    height: fit-content;
     padding: 30px;
 }
 .Layout7-about h1{
@@ -23,21 +23,28 @@
     margin: 10px;
 }
 .content-img{
+    
     display: flex;
-
+    object-fit: cover;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 10px;
 }
 .content-wrapper p{
-    font-size: 27px;
+    font-size: 15px;
     font-weight: 400;
     font-family: "Open Sans",sans-serif;
     line-height: 1.5;
+    text-align: center;
 
 }
 .Layout7-about button{
-    width: 291px;
-    height: 56px;
+    width: fit-content;
+    height: fit-content;
     padding: 10px 40px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     font-family:"oswald",sans-serif;
     display: flex;

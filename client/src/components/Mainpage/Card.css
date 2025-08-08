@@ -1,4 +1,4 @@
-.card{
+/* .card{
     width: 574px;
     height: 824px;
     display: flex;
@@ -47,7 +47,7 @@
     font-size: 20px;
     font-weight: 800;
     letter-spacing: 3px;
-    /* border: 1px solid red; */
+     border: 1px solid red; 
     margin-left: 60%;
     width: 187px;
     height: 67px;
@@ -85,4 +85,99 @@
     background-color: #052522ED;
     margin: 15px auto;
     padding: 50px;
+} */
+.card {
+  width: 100%;
+  max-width: 550px;
+  background-color: #072622;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  margin: 40px 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.5);
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.card-image h1 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #FBD784;
+  color: #000;
+  padding: 8px 16px;
+  font-size: 22px; /* smaller */
+  font-weight: 500;
+  font-family: "Kantumruy Pro", sans-serif;
+  border-radius: 6px;
+  letter-spacing: 1px; /* spacing between letters */
+  text-transform: capitalize; /* optional: makes first letter uppercase */
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+
+.card h4 {
+  text-align: right;
+  color: #FBD784;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 20px 0 10px auto;
+}
+
+.card p {
+  text-align: center;
+  color: #ffffffcc;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+
+.card button {
+  background-color: #FDCA55;
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #fbbf24;
+  box-shadow: 0 4px 14px rgba(253, 202, 85, 0.5);
+  transform: scale(1.03);
+}
+
+.mainpage-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  background-color: #052522ED;
+  margin: 15px auto;
+  padding: 50px 20px;
+  max-width: 1440px;
 }

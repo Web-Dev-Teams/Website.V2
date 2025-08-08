@@ -1,39 +1,38 @@
 import React, { useState } from 'react';
 import './Gallery.css';
 
-// Example images – replace these with your own local or online image URLs
 import img1 from '../About-us/vision.jpg';
 import img2 from '../About-us/banner.jpeg';
 import img3 from '../About-us/mission2.jpeg';
 import Header from '../../components/Header/Header';
 
-// ✅ Inline ImageCard Component
+import FadeUp from '../FadeUp'; // ✅ Import animation
+
 const ImageCard = ({ src, onClick }) => {
   return (
-    <div className="gallery-item" onClick={() => onClick(src)}>
-      <img src={src} alt="Gallery" />
-    </div>
+    <FadeUp>
+      <div className="gallery-item" onClick={() => onClick(src)}>
+        <img src={src} alt="Gallery" />
+      </div>
+    </FadeUp>
   );
 };
 
 const Gallery = () => {
   const [modalImg, setModalImg] = useState(null);
 
-  const openModal = (src) => {
-    setModalImg(src);
-  };
+  const openModal = (src) => setModalImg(src);
+  const closeModal = () => setModalImg(null);
 
-  const closeModal = () => {
-    setModalImg(null);
-  };
-
-  const images = [img1, img2, img3];  
+  const images = [img1, img2, img3];
 
   return (
     <>
-    <Header/>
-     
-      <h3 className="gallery-subtitle">UNNATI SAMAROH</h3>
+      <Header />
+      
+      <FadeUp>
+        <h3 className="gallery-subtitle">UNNATI SAMAROH</h3>
+      </FadeUp>
 
       <div className="gallery">
         {images.map((img, index) => (

@@ -26,6 +26,8 @@
 }
 .Layout4 img {
     max-width: 900px;
+    border: none;
+    border-radius: 10px;
 }
 @media only screen and (min-width:700px) and (max-width:1000px){
     .Layout4{

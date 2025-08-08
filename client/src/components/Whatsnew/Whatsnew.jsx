@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { use } from 'react'
 import './Whatsnew.css'
+import { useNavigate } from 'react-router-dom'
 
 const Whatsnew = (props) => {
+  const navigate = useNavigate();
   return (
     <div className='whatsnew'>
       <div className='whatsnew-box'>
@@ -18,7 +20,7 @@ const Whatsnew = (props) => {
             <div className='whatsnew-right-content'>
                  {props.content}
             </div>
-            <button >
+            <button onClick={() => window.open('/whatsnew', '_blank')}>
                 Know More
             </button>
         </div>

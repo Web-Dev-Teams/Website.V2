@@ -11,7 +11,7 @@ const Layout = (props) => {
       </div>
 
       <div className="award-right">
-        <img src={props.image} alt="" />
+        <img src={props.image} alt="uuuuu" />
       </div>
     </section>
   );

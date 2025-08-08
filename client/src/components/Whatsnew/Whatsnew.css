@@ -16,6 +16,11 @@
     width: 20%;
     height: 228px;
 }
+.whatsnew-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 .whatsnew-right{
     width: 70%;
     height: 228px;

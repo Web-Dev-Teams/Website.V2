@@ -11,9 +11,9 @@ const Whatsnewsection = () => {
       <img src="./Vector_5.svg" alt="" />
 
       </div>
-      <Whatsnew image="./WhatsnewImage.png" heading="Speech given by founder" content="we had an event at IIIT Bhagalpur there we had invited the founder of Unnati welfare society...."/>
-      <Whatsnew image="./WhatsnewImage.png" heading="Speech given by founder" content="we had an event at IIIT Bhagalpur there we had invited the founder of Unnati welfare society...."/>
-      <Whatsnew image="./WhatsnewImage.png" heading="Speech given by founder" content="we had an event at IIIT Bhagalpur there we had invited the founder of Unnati welfare society...."/>
+      <Whatsnew image="teaching.jpg" heading="Speech given by founder" content="we had an event at IIIT Bhagalpur there we had invited the founder of Unnati welfare society...."/>
+      <Whatsnew image="teaching.jpg" heading="Speech given by founder" content="we had an event at IIIT Bhagalpur there we had invited the founder of Unnati welfare society...."/>
+      <Whatsnew image="teaching.jpg" heading="Speech given by founder" content="we had an event at IIIT Bhagalpur there we had invited the founder of Unnati welfare society...."/>
       
     </div>
   )

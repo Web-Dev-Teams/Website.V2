@@ -7,15 +7,8 @@ const Layout7 = (props) => {
        <div className='Layout7-about' style={{borderBottom: `5px solid ${props.color}`}}>
           <h1>{props.name}</h1>
           <div className='content-wrapper'>
-            <div className='content-img'>
-                <p>{props.contPara1}</p>
-                <img src={props.image} alt="" />
-            </div>
-            <div className='content-2'>
-                <p>{props.contPara2}</p>
-
-            </div>
-            
+            <img src={props.img} alt="" className='content-img'/>
+            <p>{props.content}</p>
           </div>
           <button style={{border: `1px solid ${props.color}`, color:props.color }}>
             Button
@@ -24,23 +17,13 @@ const Layout7 = (props) => {
        <div className='Layout7-about' style={{borderBottom: `5px solid ${props.color}`}}>
           <h1>{props.name2}</h1>
           <div className='content-wrapper'>
-            <div className='content-img'>
-                <p>{props.cont2Para1}</p>
-                <img src={props.image2} alt="" />
-            </div>
-            <div className='content-2'>
-                <p>{props.cont2Para2}</p>
-
-            </div>
-            
+            <img src={props.img2} alt="" className='content-img'/>
+            <p>{props.content2}</p>
           </div>
           <button style={{border: `1px solid ${props.color}`, color:props.color }}>
             Button
           </button>
        </div>
-       
-       
-
     </div>
   )
 }

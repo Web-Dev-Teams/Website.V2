@@ -1,43 +1,79 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import {useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import './Menu.css';
 
 const Menu = ({ closeMenu }) => {
+  const navigate = useNavigate();
+  const [hovered, setHovered] = useState(false);
   return (
     <div className="menu">
       <ul>
-        <li style={{ backgroundColor: '#9A41DA' }}>
-          <NavLink
-            to="/digiXplore"
-            className={({ isActive }) => (isActive ? 'menu-active-class' : 'menu-not-active-class')}
-            onClick={closeMenu}
+        <li style={
+          {  
+            color: hovered ?  "#ffffff" : '#9A41DA', 
+            backgroundColor: hovered ? " #9A41DA" : " ",
+            transition: "1s ease-in-out"
+          }
+          } 
+          onClick={() => navigate('/digixplore')}
+          onMouseEnter={() => setHovered(true)}
+         onMouseLeave={() => setHovered(false)}
           >
-            DigiXplore
-          </NavLink>
+         DigiXplore
         </li>
 
-        <li style={{ backgroundColor: '#FF832C' }}>
-          <NavLink to="/netritva" className="menu-not-active-class" onClick={closeMenu}>
+        <li 
+        style={{ 
+          color: hovered ?  "#ffffff" : '#FF832C', 
+           backgroundColor: hovered ? " #FF832C" : " ",
+            transition: "1s ease-in-out"
+           }}
+            onClick={() => navigate('/netritva')}
+            onMouseEnter={() => setHovered(true)}
+           onMouseLeave={() => setHovered(false)}
+            >
             Netritva
-          </NavLink>
         </li>
 
-        <li style={{ backgroundColor: '#228B22' }}>
-          <NavLink to="/prayaas" className="menu-not-active-class" onClick={closeMenu}>
-            Prayaas
-          </NavLink>
+        <li 
+        style={{
+           color: hovered ?  "#ffffff" : '#228B22', 
+           backgroundColor: hovered ? " #228B22" : " ",
+            transition: "1s ease-in-out"
+
+           }}
+            onClick={() => navigate('/prayaas')}
+            onMouseEnter={() => setHovered(true)}
+         onMouseLeave={() => setHovered(false)}
+            >
+         Prayaas
         </li>
 
-        <li style={{ backgroundColor: '#3741A2' }}>
-          <NavLink to="/esafe" className="menu-not-active-class" onClick={closeMenu}>
+        <li 
+        style={{ 
+         color: hovered ?  "#ffffff" : '#3741A2', 
+           backgroundColor: hovered ? " #3741A2" : " ",
+            transition: "1s ease-in-out"
+           }} 
+           onClick={() => navigate('/esafe')}
+           onMouseEnter={() => setHovered(true)}
+         onMouseLeave={() => setHovered(false)}
+           >
             eSafe
-          </NavLink>
         </li>
 
-        <li style={{ backgroundColor: '#008080' }}>
-          <NavLink to="/akshar" className="menu-not-active-class" onClick={closeMenu}>
-            Akshar
-          </NavLink>
+        <li
+         style={{
+           color: hovered ?  "#ffffff" : '#008080', 
+           backgroundColor: hovered ? " #008080" : " ",
+            transition: "1s ease-in-out"
+           }} 
+         onClick={() => navigate('/akshar')}
+         onMouseEnter={() => setHovered(true)}
+         onMouseLeave={() => setHovered(false)}
+         >
+          Akshar
         </li>
       </ul>
     </div>

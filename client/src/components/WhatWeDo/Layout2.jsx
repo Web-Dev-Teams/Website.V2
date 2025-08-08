@@ -10,12 +10,12 @@ const Layout2 = (props) => {
         </div>
         <div className='Layout2-right'> 
             <ul>
-                <li style={{backgroundColor: props.bg1, border:`1px solid ${props.color}`}}><span><img src={props.image1} /></span>DigiXplore</li>
-                <li style={{backgroundColor: props.bg2, border:`1px solid ${props.color}`}}><span><img src={props.image2} /></span>Netritva</li>
-                <li style={{backgroundColor: props.bg3, border:`1px solid ${props.color}`}}><span><img src={props.image3} /></span>Akshar</li>
-                <li style={{backgroundColor: props.bg4, border:`1px solid ${props.color}`}}><span><img src={props.image4} /></span>Prayaas</li>
-                <li style={{backgroundColor: props.bg5, border:`1px solid ${props.color}`}}><span><img src={props.image5} /></span>eSafe</li>
-                <li>Prakriti Path</li>
+                <li style={{backgroundColor: props.bg1, border:`1px solid ${props.color}`}}> DigiXplore</li>
+                <li style={{backgroundColor: props.bg2, border:`1px solid ${props.color}`}}>Netritva</li>
+                <li style={{backgroundColor: props.bg3, border:`1px solid ${props.color}`}}>Akshar</li>
+                <li style={{backgroundColor: props.bg4, border:`1px solid ${props.color}`}}>Prayaas</li>
+                <li style={{backgroundColor: props.bg5, border:`1px solid ${props.color}`}}>eSafe</li>
+                <li style={{backgroundColor: props.bg5, border:`1px solid ${props.color}`}}>Prakriti Path</li>
             </ul>
 
         </div>

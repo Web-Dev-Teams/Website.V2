@@ -16,9 +16,10 @@
 .photo {
   width: 100%;
   max-width: 1360px;
-  height: auto;
-  object-fit: cover;
+  height: max-content;
+  object-fit: contain;
   position: relative;
+  border-radius: 15px;
 }
 
 /* Navigation Icons */
