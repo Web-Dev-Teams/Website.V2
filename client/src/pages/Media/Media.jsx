@@ -27,26 +27,23 @@ const Gallery = () => {
   const images = [img1, img2, img3];
 
   return (
-    <>
+    <div className="media-fullwidth-bg">
       <Header />
-      
       <FadeUp>
         <h3 className="gallery-subtitle">UNNATI SAMAROH</h3>
       </FadeUp>
-
       <div className="gallery">
         {images.map((img, index) => (
           <ImageCard key={index} src={img} onClick={openModal} />
         ))}
       </div>
-
       {modalImg && (
         <div className="modal" onClick={closeModal}>
           <span className="close">&times;</span>
           <img className="modal-content" src={modalImg} alt="Modal View" />
         </div>
       )}
-    </>
+    </div>
   );
 };
 
