@@ -8,7 +8,7 @@ const FaqPage = () => {
   return (
     <div>
       <FadeUp>
-        <Header />
+        <Header/>
       </FadeUp>
 
       <FadeUp>

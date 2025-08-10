@@ -1,57 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Varela+Round&display=swap');
-
-*{
-    font-family: "Oswald", sans-serif;
-}
-.impact-card {
-    background-color: #e0e0e0;
-    padding: 20px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 300px;
-
-    margin: auto;
-  }
-  
-  .impact-title {
-    margin-left: 50px;
-    font-size: 107px;
-    font-weight: 400;
-    color: black;
-  }
-  
-  .impact-stats {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%; 
-  }
-  
-  .stat {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;  
-  }
-  
-  .stat-number {
-    font-size: 75px;
-    font-weight: bold;
-    color: teal;
-  }
-  
-  .stat-text {
-    font-size: 50px;
-    color: #333;
-  }
-   */
-
-
-
-   @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Varela+Round&display=swap');
 
 * {
   font-family: "Oswald", sans-serif;
@@ -62,148 +9,148 @@
 
 .impact-card {
   background-color: #e0e0e0;
-  padding: 20px;
   border-radius: 8px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 90vw;
   max-width: 1200px;
-  height: 300px;
-  margin: auto;
-  gap: 20px;  
-  flex-wrap: wrap;  
+  margin: 32px auto;
+  padding: 32px 6vw;
+  gap: 32px;
 }
 
 .impact-title {
-  margin-left: 50px;
   font-size: 107px;
   font-weight: 400;
   color: black;
-  flex: 1 1 300px; 
-  min-width: 250px;
+  flex: 1;
+  text-align: left;
+  line-height: 1;
 }
 
 .impact-stats {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  gap: 40px;
   align-items: center;
-  width: 100%;
-  flex: 2 1 400px;
-  min-width: 300px;
-  gap: 30px;
-  flex-wrap: wrap; 
+  flex: 2;
 }
 
 .stat {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1 1 150px;
-  min-width: 150px;
+  text-align: center;
 }
 
 .stat-number {
   font-size: 75px;
   font-weight: bold;
   color: teal;
-  text-align: center;
+  line-height: 1;
 }
 
 .stat-text {
   font-size: 50px;
   color: #333;
-  text-align: center;
-  line-height: 1.2;
+  line-height: 1;
 }
 
- 
-@media (max-width: 900px) {
-  .impact-card {
-    height: auto;
-    flex-direction: column;
-    padding: 15px;
-    margin: 0 auto;
-  }
-
+/* Laptop/tablet */
+@media (max-width: 1200px) {
   .impact-title {
-    
-    margin-left: 0;
     font-size: 70px;
-    text-align: center;
-    min-width: auto;
   }
-
-  .impact-stats {
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-  }
-
   .stat-number {
     font-size: 50px;
   }
-
   .stat-text {
     font-size: 30px;
   }
 }
 
- 
- 
-@media (max-width: 480px) {
+@media (max-width: 900px) {
   .impact-card {
-    display: flex;
-    width: 90%;       
-    max-width: 400px;  
-    margin: 0 auto;   
-    padding: 10px;
-    align-self: center;  
-  }
-
-  .impact-title {
-    font-size: 45px;
-  }
-
-  .impact-stats {
     flex-direction: column;
-    gap: 15px;
+    padding: 20px 4vw;
+    gap: 20px;
+    width: 98vw;
   }
-
+  .impact-title {
+    font-size: 48px;
+    text-align: center;
+  }
+  .impact-stats {
+    flex-direction: row;
+    gap: 18px;
+    justify-content: center;
+  }
   .stat-number {
-    font-size: 40px;
+    font-size: 36px;
   }
-
   .stat-text {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
-@media (max-width: 1076px) {
+
+@media (max-width: 768px) {
   .impact-card {
-    display: flex;
-    width: 90%;       
-    max-width: 400px;  
-    margin: 0 auto;   
-    padding: 10px;
-    align-self: center; 
-    height: 100%; 
+    flex-direction: column;
+    padding: 16px 2vw;
+    gap: 16px;
+    width: 99vw;
   }
-
   .impact-title {
-    font-size: 45px;
+    font-size: 26px;
+    text-align: center;
   }
-
   .impact-stats {
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
+    align-items: center;
   }
-
   .stat-number {
-    font-size: 40px;
+    font-size: 18px;
   }
-
   .stat-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .impact-card {
+    padding: 12px 2vw;
+    gap: 12px;
+  }
+  .impact-title {
     font-size: 24px;
+  }
+  .impact-stats {
+    gap: 10px;
+  }
+  .stat-number {
+    font-size: 20px;
+  }
+  .stat-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .impact-card {
+    padding: 8px 1vw;
+    gap: 8px;
+  }
+  .impact-title {
+    font-size: 22px;
+  }
+  .stat-number {
+    font-size: 18px;
+  }
+  .stat-text {
+    font-size: 12px;
   }
 }
 

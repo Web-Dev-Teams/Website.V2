@@ -4,6 +4,12 @@ import Menu from '../WhatWeDo/Menu';
 import ContactMenu from '../Contactus/ContactMenu';
 import './Header.css';
 
+const Header=()=>{
+  return (
+    <h1>HEADER</h1>
+  )
+}
+/*
 const Header = () => {
   const navigate = useNavigate();
 
@@ -58,7 +64,7 @@ const Header = () => {
             <h1>UNNATI WELFARE SOCIETY</h1>
             <p>Revolutionizing present, Transforming Future</p>
           </div>
-          {/* Modified Donate button to scroll to section  */}
+          //{ Modified Donate button to scroll to section  }
 
           <NavLink to='/donation#donate-form'>
             <button>Donate</button>
@@ -73,9 +79,9 @@ const Header = () => {
               <NavLink to='/aboutus' className={({ isActive }) => isActive ? "active-class" : "not-active-class"}>About us</NavLink>
               <span><img src="../Polygon-1.svg" alt="dropdown icon" /></span>
             </li>
-              {/* <NavLink to='/whatwedo' className={({ isActive }) => isActive ? "active-class" : "not-active-class"}>What we do?</NavLink>
-              <span onClick={toggleMenu}><img src="../Polygon-1.svg" alt="dropdown icon" /></span>
-              {isOpen && <Menu />} */}
+             // {<NavLink to='/whatwedo' className={({ isActive }) => isActive ? "active-class" : "not-active-class"}>What we do?</NavLink>
+             // <span onClick={toggleMenu}><img src="../Polygon-1.svg" alt="dropdown icon" /></span>
+             // {isOpen && <Menu />} }
               <li ref={menuRef} className="header-dropdown-wrapper">
   <div
     className={`header-dropdown-toggle ${isOpen ? 'open' : ''}`}
@@ -140,6 +146,6 @@ const Header = () => {
     </div>
   );
 };
-
+*/
 export default Header;
 
